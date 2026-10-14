@@ -1,0 +1,1780 @@
+{
+  "evaluation_type": "independent",
+  "dataset_source": "backend/data/phase3_independent_evaluation.json",
+  "label_methodology": "synthetic_adversarial_scenarios",
+  "disclaimer": "These results measure performance on synthetic evaluation cases designed to test boundary conditions. They should NOT be presented as real-world production accuracy.",
+  "total_cases": 65,
+  "true_positives": 45,
+  "false_positives": 2,
+  "true_negatives": 4,
+  "false_negatives": 14,
+  "active_disruption_precision": {
+    "value": 0.9574,
+    "numerator": 45,
+    "denominator": 47
+  },
+  "active_disruption_recall": {
+    "value": 0.7627,
+    "numerator": 45,
+    "denominator": 59
+  },
+  "resolved_event_false_positive_rate": {
+    "value": 0.25,
+    "numerator": 1,
+    "denominator": 4
+  },
+  "missed_active_disruption_rate": {
+    "value": 0.2373,
+    "numerator": 14,
+    "denominator": 59
+  },
+  "historical_event_leakage_rate": {
+    "value": 0.0,
+    "numerator": 0,
+    "denominator": 0
+  },
+  "weather_classification_accuracy": {
+    "value": 0.8923,
+    "numerator": 58,
+    "denominator": 65
+  },
+  "geographic_match_accuracy": {
+    "value": 0.7692,
+    "numerator": 50,
+    "denominator": 65
+  },
+  "business_impact_precision": {
+    "value": 0.7385,
+    "numerator": 48,
+    "denominator": 65
+  },
+  "business_impact_downstream_accuracy": {
+    "value": 0.9846,
+    "numerator": 64,
+    "denominator": 65
+  },
+  "upstream_leakage_count": {
+    "value": 0,
+    "numerator": 0,
+    "denominator": 65
+  },
+  "human_review_rate": {
+    "value": 0.1077,
+    "numerator": 7,
+    "denominator": 65
+  },
+  "review_routing_accuracy": {
+    "value": 0.8,
+    "numerator": 52,
+    "denominator": 65
+  },
+  "freshness_filter_accuracy": {
+    "value": 1.0,
+    "numerator": 65,
+    "denominator": 65
+  },
+  "credibility_band_distribution": {
+    "unconfirmed": {
+      "total": 3,
+      "correct_gating": 2
+    },
+    "low": {
+      "total": 38,
+      "correct_gating": 36
+    },
+    "moderate": {
+      "total": 24,
+      "correct_gating": 24
+    },
+    "high": {
+      "total": 0,
+      "correct_gating": 0
+    }
+  },
+  "results_log": [
+    {
+      "id": "P3-01",
+      "scenario": "Active port disruption halting container movements",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 60.19,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "expected_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-02",
+      "scenario": "Active factory fire halting semiconductor fabrication",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 61.39,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-fab-hsinchu"
+      ],
+      "expected_direct_impact": [
+        "ent-fab-hsinchu"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-03",
+      "scenario": "Active transport route disruption \u2014 freight rail derailment",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 60.24,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-rail-hamburg"
+      ],
+      "expected_direct_impact": [
+        "ent-rail-hamburg"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-04",
+      "scenario": "Active warehouse structural collapse halting order fulfillment",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 35.9,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-ware-chicago"
+      ],
+      "expected_direct_impact": [
+        "ent-ware-chicago"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-05",
+      "scenario": "Active supplier bankruptcy halting deliveries",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 59.49,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-supp-detroit"
+      ],
+      "expected_direct_impact": [
+        "ent-supp-detroit"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-06",
+      "scenario": "Active cyber ransomware attack paralyzing factory SCADA networks",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 53.3,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-fact-munich"
+      ],
+      "expected_direct_impact": [
+        "ent-fact-munich"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-07",
+      "scenario": "Active extreme monsoon flood submerging manufacturing sector",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "confirmed",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 63.81,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-textile-surat"
+      ],
+      "expected_direct_impact": [
+        "ent-textile-surat"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-08",
+      "scenario": "Active power grid failure cutting electricity to industrial park",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 46.79,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-chem-houston"
+      ],
+      "expected_direct_impact": [
+        "ent-chem-houston"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-09",
+      "scenario": "Old incident republished in recent article \u2014 10-year retrospective",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": false,
+      "actual_weather": "not_supported",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "unconfirmed",
+      "actual_authenticity_score": 20.9,
+      "actual_is_gated": true,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-drive-bangkok"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": true,
+      "expected_review": false
+    },
+    {
+      "id": "P3-10",
+      "scenario": "Ongoing incident that began 12 days ago with current follow-up coverage",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 61.12,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-antwerp"
+      ],
+      "expected_direct_impact": [
+        "ent-port-antwerp"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-11",
+      "scenario": "Resolved incident with complete resumption and zero continuing impact",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": false,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 52.14,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-semi-dresden"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-12",
+      "scenario": "Resolved incident with continuing operational backlogs and production delays",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 59.63,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-hamburg"
+      ],
+      "expected_direct_impact": [
+        "ent-port-hamburg"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-13",
+      "scenario": "Temporary reopening followed by another emergency shutdown",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 52.76,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-pack-austin"
+      ],
+      "expected_direct_impact": [
+        "ent-pack-austin"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-14",
+      "scenario": "One article mentioning both a resolved incident and a new active incident",
+      "category": "active_resolved_disruptions",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "confirmed",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 68.29,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-rail-sendai"
+      ],
+      "expected_direct_impact": [
+        "ent-rail-sendai"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-15",
+      "scenario": "Multiple independent reports of the same event from distinct wire services",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 53.15,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-la"
+      ],
+      "expected_direct_impact": [
+        "ent-port-la"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-16",
+      "scenario": "Corroborating report for P3-15 from an independent domain (FT)",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 50.68,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-la"
+      ],
+      "expected_direct_impact": [
+        "ent-port-la"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-17",
+      "scenario": "Syndicated duplicate copy republished across aggregator sites",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 37.4,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-la"
+      ],
+      "expected_direct_impact": [
+        "ent-port-la"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-18",
+      "scenario": "Repeated report from the exact same source domain",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 52.63,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-la"
+      ],
+      "expected_direct_impact": [
+        "ent-port-la"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-19",
+      "scenario": "Reputable source reporting preliminary, unconfirmed claims",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 51.0,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-chem-antwerp"
+      ],
+      "expected_direct_impact": [
+        "ent-chem-antwerp"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-20",
+      "scenario": "Low-quality sketchy source reporting unverified sabotage claims",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "unconfirmed",
+      "actual_authenticity_score": 34.47,
+      "actual_is_gated": true,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": true,
+      "expected_review": true
+    },
+    {
+      "id": "P3-21",
+      "scenario": "Conflicting reports: major wire says strike averted, tabloid says shutdown ongoing",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": false,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 52.17,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-hamburg"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-22",
+      "scenario": "Unsupported social media claim without evidence or source attribution",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": false,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 35.97,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-shanghai"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-23",
+      "scenario": "Accurate article containing zero business or supply chain disruption \u2014 sports stadium delay",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": false,
+      "actual_weather": "confirmed",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 52.81,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-auto-munich"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-24",
+      "scenario": "Celebrity entertainment news with strike keywords \u2014 false positive trap",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": false,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 43.75,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-ware-ny"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-25",
+      "scenario": "High credibility single source on breaking rail incident without corroboration",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 62.54,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-jurong-chem"
+      ],
+      "expected_direct_impact": [
+        "ent-jurong-chem"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-26",
+      "scenario": "Exact duplicate URL submission in subsequent monitoring fetch",
+      "category": "source_quality_corroboration",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 60.44,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "expected_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-27",
+      "scenario": "Same-name cities in different states \u2014 Portland, Oregon vs Portland, Maine",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "confirmed",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 54.83,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_AMBIGUOUS",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [],
+      "expected_direct_impact": [
+        "ent-grain-portland-or"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": true,
+      "expected_review": false
+    },
+    {
+      "id": "P3-28",
+      "scenario": "Ambiguous same-name city without state specification \u2014 requires analyst review",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 63.15,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_AMBIGUOUS",
+      "expected_geo_status": "LOCATION_AMBIGUOUS",
+      "actual_direct_impact": [],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": true,
+      "expected_review": true
+    },
+    {
+      "id": "P3-29",
+      "scenario": "Similarly named industrial parks in different cities",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 46.62,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-houston-plant"
+      ],
+      "expected_direct_impact": [
+        "ent-houston-plant"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-30",
+      "scenario": "Missing entity and event coordinates \u2014 unresolvable location",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 46.14,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "expected_geo_status": "LOCATION_UNRESOLVED",
+      "actual_direct_impact": [
+        "ent-ware-unknown"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-31",
+      "scenario": "Invalid geographic coordinates out of range (latitude > 90)",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "insufficient_coverage",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 46.1,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "actual_direct_impact": [
+        "ent-hamburg-depot"
+      ],
+      "expected_direct_impact": [
+        "ent-hamburg-depot"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-32",
+      "scenario": "Null Island coordinates (0.0, 0.0) must be rejected",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "unavailable",
+      "expected_weather": "insufficient_coverage",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 45.76,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "expected_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-33",
+      "scenario": "Article text explicitly conflicts with geocoded coordinates",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "unavailable",
+      "expected_weather": "insufficient_coverage",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 60.75,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "actual_direct_impact": [
+        "ent-shanghai-plant"
+      ],
+      "expected_direct_impact": [
+        "ent-shanghai-plant"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-34",
+      "scenario": "Event equidistant to multiple configured facilities in same industrial hub",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 46.3,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_AMBIGUOUS",
+      "expected_geo_status": "LOCATION_AMBIGUOUS",
+      "actual_direct_impact": [],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": true,
+      "expected_review": true
+    },
+    {
+      "id": "P3-35",
+      "scenario": "Clear location but no established operational relationship to configured business",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 46.56,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_UNRESOLVED",
+      "actual_direct_impact": [
+        "ent-fact-berlin"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-36",
+      "scenario": "Vague regional reference that must remain unresolved without guessing",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 60.86,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "actual_direct_impact": [
+        "ent-rotterdam-hub"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-37",
+      "scenario": "Disambiguating Hyderabad India from Hyderabad Pakistan",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "confirmed",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 53.52,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "expected_geo_status": "LOCATION_UNRESOLVED",
+      "actual_direct_impact": [
+        "ent-it-hyderabad-in"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-38",
+      "scenario": "Disambiguating San Jose California from San Jose Costa Rica",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 47.16,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_AMBIGUOUS",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [],
+      "expected_direct_impact": [
+        "ent-california-fab"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": true,
+      "expected_review": false
+    },
+    {
+      "id": "P3-39",
+      "scenario": "Unresolved location cannot trigger high-confidence NetworkX impact propagation",
+      "category": "geography_entity_matching",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 47.08,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_UNRESOLVED",
+      "actual_direct_impact": [
+        "ent-supp-austin"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [
+        "ent-fact-dallas"
+      ],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-40",
+      "scenario": "Direct supplier disruption propagating to dependent factory",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 61.92,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-supp-rotterdam"
+      ],
+      "expected_direct_impact": [
+        "ent-supp-rotterdam"
+      ],
+      "actual_downstream_impact": [
+        "ent-fact-amsterdam"
+      ],
+      "expected_downstream_impact": [
+        "ent-fact-amsterdam"
+      ],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-41",
+      "scenario": "Warehouse disruption affecting downstream distribution customers",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "confirmed",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 68.18,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-ware-hamburg"
+      ],
+      "expected_direct_impact": [
+        "ent-ware-hamburg"
+      ],
+      "actual_downstream_impact": [
+        "ent-cust-berlin"
+      ],
+      "expected_downstream_impact": [
+        "ent-cust-berlin"
+      ],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-42",
+      "scenario": "Route disruption affecting downstream manufacturing facilities",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 60.62,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-route-suez"
+      ],
+      "expected_direct_impact": [
+        "ent-route-suez"
+      ],
+      "actual_downstream_impact": [
+        "ent-fact-rotterdam"
+      ],
+      "expected_downstream_impact": [
+        "ent-fact-rotterdam"
+      ],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-43",
+      "scenario": "Upstream supplier disruption with multiple dependent factories (fan-out)",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 59.84,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-supp-hsinchu"
+      ],
+      "expected_direct_impact": [
+        "ent-supp-hsinchu"
+      ],
+      "actual_downstream_impact": [
+        "ent-fact-dresden",
+        "ent-fact-austin"
+      ],
+      "expected_downstream_impact": [
+        "ent-fact-dresden",
+        "ent-fact-austin"
+      ],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-44",
+      "scenario": "CRITICAL DIRECTIONALITY TEST: Downstream customer disruption MUST NOT propagate upstream to supplier",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 45.93,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-cust-munich"
+      ],
+      "expected_direct_impact": [
+        "ent-cust-munich"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-45",
+      "scenario": "Multi-hop linear dependency chain respecting max depth limit",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 61.04,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-hop-1"
+      ],
+      "expected_direct_impact": [
+        "ent-hop-1"
+      ],
+      "actual_downstream_impact": [
+        "ent-hop-3",
+        "ent-hop-2",
+        "ent-hop-4"
+      ],
+      "expected_downstream_impact": [
+        "ent-hop-2",
+        "ent-hop-3",
+        "ent-hop-4"
+      ],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-46",
+      "scenario": "Geographically close but operationally unrelated facility \u2014 proximity does not imply dependency",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 46.15,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "expected_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-47",
+      "scenario": "Real severe disruption with ZERO business exposure to configured enterprise",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 60.02,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_UNRESOLVED",
+      "actual_direct_impact": [
+        "ent-fact-austin"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-48",
+      "scenario": "Severe event with LOW business exposure (qualified alternative supplier, low dependency weight)",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 45.53,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-supp-dresden"
+      ],
+      "expected_direct_impact": [
+        "ent-supp-dresden"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-49",
+      "scenario": "Moderate event with HIGH business exposure (sole supplier, 100% dependency weight, 60 days lead time)",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 53.55,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-supp-lens"
+      ],
+      "expected_direct_impact": [
+        "ent-supp-lens"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-50",
+      "scenario": "Diamond graph topology (A -> B -> D and A -> C -> D) must NOT duplicate impact on D",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 62.22,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-dia-a"
+      ],
+      "expected_direct_impact": [
+        "ent-dia-a"
+      ],
+      "actual_downstream_impact": [
+        "ent-dia-d",
+        "ent-dia-c",
+        "ent-dia-b"
+      ],
+      "expected_downstream_impact": [
+        "ent-dia-b",
+        "ent-dia-c",
+        "ent-dia-d"
+      ],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-51",
+      "scenario": "Missing relationship edge does not imply dependency",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 61.52,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-antwerp"
+      ],
+      "expected_direct_impact": [
+        "ent-port-antwerp"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-52",
+      "scenario": "Isolated node in graph has zero downstream impacts",
+      "category": "business_impact_analysis",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 37.93,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-iso-shanghai"
+      ],
+      "expected_direct_impact": [
+        "ent-iso-shanghai"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-53",
+      "scenario": "Current localized heavy rainfall confirming flood disruption",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 52.31,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-textile-surat"
+      ],
+      "expected_direct_impact": [
+        "ent-textile-surat"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-54",
+      "scenario": "Severe storm with gale-force winds confirming weather disruption",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 62.58,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-hamburg"
+      ],
+      "expected_direct_impact": [
+        "ent-port-hamburg"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-55",
+      "scenario": "Calm sunny weather during claimed active flash flood \u2014 genuine contradictory evidence",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_supported",
+      "expected_weather": "not_supported",
+      "actual_credibility_band": "unconfirmed",
+      "actual_authenticity_score": 30.99,
+      "actual_is_gated": true,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-fact-munich"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": true,
+      "expected_review": true
+    },
+    {
+      "id": "P3-56",
+      "scenario": "Flooding caused by upstream river overflow / dam release when local rainfall is 0mm",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "insufficient_coverage",
+      "expected_weather": "insufficient_coverage",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 54.53,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-textile-surat"
+      ],
+      "expected_direct_impact": [
+        "ent-textile-surat"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-57",
+      "scenario": "Flood caused by storm surge / tidal overflow rather than local cloudburst",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "insufficient_coverage",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 52.31,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "expected_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-58",
+      "scenario": "Flood claim with missing entity coordinates \u2014 returns insufficient_coverage without penalty",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "insufficient_coverage",
+      "expected_weather": "insufficient_coverage",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 46.59,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "actual_direct_impact": [
+        "ent-dhaka-textile"
+      ],
+      "expected_direct_impact": [
+        "ent-dhaka-textile"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-59",
+      "scenario": "Historical flood event outside 48-hour observation telemetry window",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "insufficient_coverage",
+      "expected_weather": "insufficient_coverage",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 61.67,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-sendai-clean"
+      ],
+      "expected_direct_impact": [
+        "ent-sendai-clean"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-60",
+      "scenario": "Weather provider API timeout or network error \u2014 neutral handling",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "unavailable",
+      "expected_weather": "unavailable",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 61.43,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-hamburg"
+      ],
+      "expected_direct_impact": [
+        "ent-port-hamburg"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-61",
+      "scenario": "Non-weather event type (labor strike) \u2014 weather service must return not_checked",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 60.0,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "expected_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-62",
+      "scenario": "Non-weather event type (cyber attack) \u2014 weather service must return not_checked",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": false,
+      "expected_relevant": true,
+      "actual_weather": "not_checked",
+      "expected_weather": "not_checked",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 49.84,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-supp-detroit"
+      ],
+      "expected_direct_impact": [
+        "ent-supp-detroit"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-63",
+      "scenario": "Weather confirmed by high rainfall but entity is geographically unrelated",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "confirmed",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 70.46,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_PARTIALLY_VERIFIED",
+      "expected_geo_status": "LOCATION_UNRESOLVED",
+      "actual_direct_impact": [
+        "ent-germany-fab"
+      ],
+      "expected_direct_impact": [],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": true
+    },
+    {
+      "id": "P3-64",
+      "scenario": "Dam release flood in river basin with low local rain \u2014 explanation correctly notes upstream source",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "insufficient_coverage",
+      "expected_weather": "insufficient_coverage",
+      "actual_credibility_band": "low",
+      "actual_authenticity_score": 55.43,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-ahmedabad-eng"
+      ],
+      "expected_direct_impact": [
+        "ent-ahmedabad-eng"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    },
+    {
+      "id": "P3-65",
+      "scenario": "Borderline precipitation exactly at 20.0mm threshold",
+      "category": "weather_evidence_audit",
+      "provenance": "synthetic_controlled_fixture",
+      "actual_freshness": "kept_by_recency",
+      "actual_relevant": true,
+      "expected_relevant": true,
+      "actual_weather": "confirmed",
+      "expected_weather": "confirmed",
+      "actual_credibility_band": "moderate",
+      "actual_authenticity_score": 68.81,
+      "actual_is_gated": false,
+      "actual_geo_status": "LOCATION_VERIFIED",
+      "expected_geo_status": "LOCATION_VERIFIED",
+      "actual_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "expected_direct_impact": [
+        "ent-port-rotterdam"
+      ],
+      "actual_downstream_impact": [],
+      "expected_downstream_impact": [],
+      "actual_review": false,
+      "expected_review": false
+    }
+  ]
+}

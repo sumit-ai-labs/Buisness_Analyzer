@@ -1,0 +1,4285 @@
+[
+  {
+    "id": "P3-01",
+    "scenario_description": "Active port disruption halting container movements",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Rotterdam dockworkers strike enters third day, halting terminal operations",
+      "snippet": "All container loading at the Maasvlakte terminal remains halted as wage negotiations stalled this morning. Over 40 container ships are queued off the coast.",
+      "source_url": "https://reuters.com/business/rotterdam-port-strike-day-3",
+      "published_days_ago": 0.2,
+      "event_type": "strike",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-rotterdam",
+          "name": "Rotterdam Gateway Terminal",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-rotterdam"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Clear ongoing strike at configured facility from wire service. High relevance, active status.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-02",
+    "scenario_description": "Active factory fire halting semiconductor fabrication",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Industrial blaze forces immediate shutdown of Hsinchu wafer fabrication plant",
+      "snippet": "Emergency services are battling a major fire at Fab 3 in Hsinchu Science Park. Management confirmed cleanroom operations are completely shut down with severe equipment damage.",
+      "source_url": "https://bloomberg.com/news/hsinchu-fab-fire-shutdown",
+      "published_days_ago": 0.1,
+      "event_type": "closure",
+      "location_mentioned": "Hsinchu, Taiwan",
+      "coordinates": [
+        24.8138,
+        120.9675
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-fab-hsinchu",
+          "name": "Hsinchu Silicon Wafer Plant",
+          "type": "factory",
+          "location": "Hsinchu, Taiwan",
+          "criticality": "high",
+          "latitude": 24.8138,
+          "longitude": 120.9675
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-fab-hsinchu"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-fab-hsinchu"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Major active industrial fire causing facility shutdown.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-03",
+    "scenario_description": "Active transport route disruption \u2014 freight rail derailment",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Freight train derailment blocks primary rail corridor outside Hamburg",
+      "snippet": "A 40-car container train derailed early this morning, destroying track infrastructure. Rail freight authority reports the corridor between Hamburg and Hanover will remain closed for at least 5 days.",
+      "source_url": "https://ft.com/transport/hamburg-freight-rail-derailment",
+      "published_days_ago": 0.3,
+      "event_type": "closure",
+      "location_mentioned": "Hamburg, Germany",
+      "coordinates": [
+        53.5511,
+        9.9937
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-rail-hamburg",
+          "name": "Hamburg Rail Freight Hub",
+          "type": "route",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-rail-hamburg"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-rail-hamburg"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Active critical transport route closure.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-04",
+    "scenario_description": "Active warehouse structural collapse halting order fulfillment",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Roof collapse at Central Chicago distribution facility suspends regional logistics",
+      "snippet": "Heavy load led to partial roof failure at the logistics center. Facility is condemned pending engineering review. All outgoing shipments are suspended indefinitely.",
+      "source_url": "https://chicagotribune.com/news/warehouse-roof-collapse",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Chicago, United States",
+      "coordinates": [
+        41.8781,
+        -87.6298
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-ware-chicago",
+          "name": "Chicago Central Distribution Center",
+          "type": "warehouse",
+          "location": "Chicago, United States",
+          "criticality": "medium",
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-ware-chicago"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-ware-chicago"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Warehouse collapse resulting in active shutdown.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-05",
+    "scenario_description": "Active supplier bankruptcy halting deliveries",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Key automotive parts supplier files Chapter 11 bankruptcy, freezes shipments",
+      "snippet": "Precision Machining Corp in Detroit abruptly filed for bankruptcy protection today. Receivers have frozen all component deliveries to assembly plants until court review.",
+      "source_url": "https://wsj.com/business/auto-parts-supplier-bankruptcy",
+      "published_days_ago": 0.4,
+      "event_type": "closure",
+      "location_mentioned": "Detroit, United States",
+      "coordinates": [
+        42.3314,
+        -83.0458
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-supp-detroit",
+          "name": "Detroit Precision Machining",
+          "type": "supplier",
+          "location": "Detroit, United States",
+          "criticality": "high",
+          "latitude": 42.3314,
+          "longitude": -83.0458
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-supp-detroit"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-supp-detroit"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Active supplier bankruptcy with frozen shipments.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-06",
+    "scenario_description": "Active cyber ransomware attack paralyzing factory SCADA networks",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Ransomware locks production servers at Munich industrial automation plant",
+      "snippet": "Malware encrypted manufacturing execution systems across Munich assembly lines at dawn. Engineers have taken all production machinery offline to prevent lateral spread.",
+      "source_url": "https://reuters.com/technology/munich-plant-ransomware-attack",
+      "published_days_ago": 0.1,
+      "event_type": "closure",
+      "location_mentioned": "Munich, Germany",
+      "coordinates": [
+        48.1351,
+        11.582
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-fact-munich",
+          "name": "Munich Automation Works",
+          "type": "factory",
+          "location": "Munich, Germany",
+          "criticality": "high",
+          "latitude": 48.1351,
+          "longitude": 11.582
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-fact-munich"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-fact-munich"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Active cyber event halting plant operations.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-07",
+    "scenario_description": "Active extreme monsoon flood submerging manufacturing sector",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Monsoon deluge submerges Surat industrial estate under 4 feet of water",
+      "snippet": "Incessant rains have submerged roads and factories across Surat industrial zone. Over 200 textile and diamond cutting units have halted operations as power substations are flooded.",
+      "source_url": "https://timesofindia.com/city/surat/monsoon-deluge-submerges-factories",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Surat, Gujarat, India",
+      "coordinates": [
+        21.17024,
+        72.83106
+      ],
+      "mock_weather": {
+        "precipitation_mm": 65.0,
+        "wind_speed_kmh": 28.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-textile-surat",
+          "name": "Surat Textile Manufacturing Hub",
+          "type": "factory",
+          "location": "Surat, Gujarat, India",
+          "criticality": "high",
+          "latitude": 21.17024,
+          "longitude": 72.83106
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-textile-surat"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-textile-surat"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Active severe flood event with high local precipitation confirming the claim.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-08",
+    "scenario_description": "Active power grid failure cutting electricity to industrial park",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Major substation explosion triggers blackout across Houston petrochemical zone",
+      "snippet": "Catastrophic transformer failure at the central substation cut power to dozens of refining and chemical manufacturing plants. Grid operators estimate restoration will take at least 36 hours.",
+      "source_url": "https://houstonchronicle.com/substation-explosion-blackout",
+      "published_days_ago": 0.3,
+      "event_type": "closure",
+      "location_mentioned": "Houston, United States",
+      "coordinates": [
+        29.7604,
+        -95.3698
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-chem-houston",
+          "name": "Houston Chemical Complex",
+          "type": "factory",
+          "location": "Houston, United States",
+          "criticality": "high",
+          "latitude": 29.7604,
+          "longitude": -95.3698
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-chem-houston"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-chem-houston"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Active utility failure shutting down production.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-09",
+    "scenario_description": "Old incident republished in recent article \u2014 10-year retrospective",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Remembering the 2011 Thailand floods: How supply chains adapted a decade later",
+      "snippet": "Ten years ago, severe inundation submerged Ayutthaya industrial estates, paralyzing global hard drive manufacturing. Today, modern floodwalls protect the plants and current operations remain fully normal.",
+      "source_url": "https://bangkokpost.com/business/2011-flood-retrospective",
+      "published_days_ago": 0.5,
+      "event_type": "flood",
+      "location_mentioned": "Bangkok, Thailand",
+      "coordinates": [
+        13.7563,
+        100.5018
+      ],
+      "mock_weather": {
+        "precipitation_mm": 0.0,
+        "wind_speed_kmh": 5.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-drive-bangkok",
+          "name": "Bangkok Component Plant",
+          "type": "factory",
+          "location": "Bangkok, Thailand",
+          "criticality": "high",
+          "latitude": 13.7563,
+          "longitude": 100.5018
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "resolved",
+      "is_relevant": false,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-drive-bangkok"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Recent publication date, but article is an anniversary retrospective of a historical 2011 event with zero current impact. Must be filtered as not relevant.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-10",
+    "scenario_description": "Ongoing incident that began 12 days ago with current follow-up coverage",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Antwerp port strike enters twelfth day with talks deadlocked",
+      "snippet": "Dockers continue blockade of container gates for the 12th consecutive day. Shippers warn critical import backlogs are now threatening assembly plants across Western Europe.",
+      "source_url": "https://reuters.com/business/antwerp-port-strike-day-12",
+      "published_days_ago": 0.2,
+      "event_type": "strike",
+      "location_mentioned": "Antwerp, Belgium",
+      "coordinates": [
+        51.2194,
+        4.4025
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-antwerp",
+          "name": "Antwerp Container Terminal",
+          "type": "route",
+          "location": "Antwerp, Belgium",
+          "criticality": "high",
+          "latitude": 51.2194,
+          "longitude": 4.4025
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-antwerp"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-antwerp"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Event began >7 days ago, but the article is fresh and explicitly reports active, continuing paralyzed operations today.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-11",
+    "scenario_description": "Resolved incident with complete resumption and zero continuing impact",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Operations fully resumed at Dresden microelectronics facility following power check",
+      "snippet": "Semiconductor manufacturer announced all cleanroom tools have returned to normal 100% capacity after yesterday's brief utility inspection. All delivery schedules are fully on track.",
+      "source_url": "https://reuters.com/business/dresden-chip-plant-normal-operations",
+      "published_days_ago": 0.3,
+      "event_type": "closure",
+      "location_mentioned": "Dresden, Germany",
+      "coordinates": [
+        51.0504,
+        13.7373
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-semi-dresden",
+          "name": "Dresden Semiconductor Fab",
+          "type": "factory",
+          "location": "Dresden, Germany",
+          "criticality": "high",
+          "latitude": 51.0504,
+          "longitude": 13.7373
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "resolved",
+      "is_relevant": false,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-semi-dresden"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Clean resolution with zero backlog or operational delay. Must be filtered out to prevent false alert.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-12",
+    "scenario_description": "Resolved incident with continuing operational backlogs and production delays",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Port strike ended yesterday as workers ratify contract, but weeks of container backlog remain",
+      "snippet": "Although dockers returned to terminals this morning after signing the labor pact, port authority warned a severe backlog of 150,000 delayed containers will disrupt supply chains through November.",
+      "source_url": "https://ft.com/shipping/port-pact-signed-backlog-lingers",
+      "published_days_ago": 0.2,
+      "event_type": "strike",
+      "location_mentioned": "Hamburg, Germany",
+      "coordinates": [
+        53.5511,
+        9.9937
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-hamburg",
+          "name": "Hamburg Container Terminal",
+          "type": "route",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-hamburg"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-hamburg"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Labor strike concluded, but significant operational delay and container backlog persist actively impacting supply chains. Must remain active.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-13",
+    "scenario_description": "Temporary reopening followed by another emergency shutdown",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Austin chip packaging plant forced into second shutdown hours after brief reopening",
+      "snippet": "After briefly resuming operations following water main repairs, the facility suffered a major chemical line leak requiring a second immediate evacuation and complete shutdown.",
+      "source_url": "https://reuters.com/technology/austin-plant-second-shutdown",
+      "published_days_ago": 0.1,
+      "event_type": "closure",
+      "location_mentioned": "Austin, United States",
+      "coordinates": [
+        30.2672,
+        -97.7431
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-pack-austin",
+          "name": "Austin Semiconductor Packaging",
+          "type": "factory",
+          "location": "Austin, United States",
+          "criticality": "high",
+          "latitude": 30.2672,
+          "longitude": -97.7431
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-pack-austin"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-pack-austin"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Mentions both brief resumption and immediate renewed shutdown; net operational status is actively disrupted.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-14",
+    "scenario_description": "One article mentioning both a resolved incident and a new active incident",
+    "category": "active_resolved_disruptions",
+    "input": {
+      "title": "Labor dispute settled at rail yard, but flash floods now paralyze regional freight line",
+      "snippet": "While unions ratified a new contract ending the week-long strike at the depot, sudden torrential rainfall has washed out main rail tracks, halting all freight traffic.",
+      "source_url": "https://bloomberg.com/news/freight-rail-flood-disruption",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Sendai, Japan",
+      "coordinates": [
+        38.2682,
+        140.8694
+      ],
+      "mock_weather": {
+        "precipitation_mm": 45.0,
+        "wind_speed_kmh": 20.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-rail-sendai",
+          "name": "Sendai Freight Depot",
+          "type": "route",
+          "location": "Sendai, Japan",
+          "criticality": "medium",
+          "latitude": 38.2682,
+          "longitude": 140.8694
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-rail-sendai"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-rail-sendai"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Dual-incident reporting: labor resolved, but new environmental disruption is actively shutting down the corridor.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-15",
+    "scenario_description": "Multiple independent reports of the same event from distinct wire services",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Port of Los Angeles terminal crane failure stops container offloading",
+      "snippet": "A major crane malfunction at Terminal 400 has suspended container offloading. Technicians estimate repairs will take 48 hours with vessels queuing.",
+      "source_url": "https://reuters.com/business/la-port-crane-failure",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Los Angeles, United States",
+      "coordinates": [
+        34.0522,
+        -118.2437
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-la",
+          "name": "Los Angeles Container Terminal",
+          "type": "route",
+          "location": "Los Angeles, United States",
+          "criticality": "high",
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-la"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-la"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "High-reputation wire reporting active infrastructure failure.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-16",
+    "scenario_description": "Corroborating report for P3-15 from an independent domain (FT)",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Shipping delays mount at Los Angeles port following equipment breakdown",
+      "snippet": "Vessels anchored outside San Pedro Bay face multi-day delays following structural crane failure at the main Los Angeles container docks.",
+      "source_url": "https://ft.com/shipping/los-angeles-crane-breakdown",
+      "published_days_ago": 0.25,
+      "event_type": "closure",
+      "location_mentioned": "Los Angeles, United States",
+      "coordinates": [
+        34.0522,
+        -118.2437
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-la",
+          "name": "Los Angeles Container Terminal",
+          "type": "route",
+          "location": "Los Angeles, United States",
+          "criticality": "high",
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-la"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-la"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Independent second source for P3-15; valid cross-source corroboration.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-17",
+    "scenario_description": "Syndicated duplicate copy republished across aggregator sites",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Port of Los Angeles terminal crane failure stops container offloading",
+      "snippet": "A major crane malfunction at Terminal 400 has suspended container offloading. Technicians estimate repairs will take 48 hours with vessels queuing. (Reuters via SyndicatedNewsNetwork)",
+      "source_url": "https://news-aggregator-feed.com/wire/la-port-crane-failure",
+      "published_days_ago": 0.22,
+      "event_type": "closure",
+      "location_mentioned": "Los Angeles, United States",
+      "coordinates": [
+        34.0522,
+        -118.2437
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-la",
+          "name": "Los Angeles Container Terminal",
+          "type": "route",
+          "location": "Los Angeles, United States",
+          "criticality": "high",
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": true
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-la"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-la"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Exact syndicated wire copy; must NOT inflate independent corroboration count against P3-15.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-18",
+    "scenario_description": "Repeated report from the exact same source domain",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Update: Terminal 400 crane repairs underway at Port of Los Angeles",
+      "snippet": "Reuters update: Technicians continue work on the damaged crane at Terminal 400 in Los Angeles. Disruption persists as ships wait offshore.",
+      "source_url": "https://reuters.com/business/la-port-crane-update-2",
+      "published_days_ago": 0.18,
+      "event_type": "closure",
+      "location_mentioned": "Los Angeles, United States",
+      "coordinates": [
+        34.0522,
+        -118.2437
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-la",
+          "name": "Los Angeles Container Terminal",
+          "type": "route",
+          "location": "Los Angeles, United States",
+          "criticality": "high",
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-la"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-la"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Same source domain (reuters.com) reporting follow-up; domain deduplication prevents double-counting.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-19",
+    "scenario_description": "Reputable source reporting preliminary, unconfirmed claims",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Unconfirmed reports of chemical leak at Antwerp pharmaceutical hub",
+      "snippet": "Initial unverified reports suggest a potential toxic vapor release at Antwerp chemical complex. Authorities have not yet confirmed evacuations or facility status.",
+      "source_url": "https://bbc.com/news/antwerp-chemical-unconfirmed-report",
+      "published_days_ago": 0.1,
+      "event_type": "closure",
+      "location_mentioned": "Antwerp, Belgium",
+      "coordinates": [
+        51.2194,
+        4.4025
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-chem-antwerp",
+          "name": "Antwerp Chemical Complex",
+          "type": "factory",
+          "location": "Antwerp, Belgium",
+          "criticality": "high",
+          "latitude": 51.2194,
+          "longitude": 4.4025
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "uncertain",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-chem-antwerp"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-chem-antwerp"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "High reputation source but preliminary unverified wording; routes to human review.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-20",
+    "scenario_description": "Low-quality sketchy source reporting unverified sabotage claims",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Massive secret sabotage at Rotterdam port destroys automated cranes!!",
+      "snippet": "Exclusive insider leak: Shadow operators secretly cut fiber lines destroying Rotterdam port network. Mainstream media is covering it up!",
+      "source_url": "https://dark-truth-leaks.info/rotterdam-secret-sabotage",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-rotterdam",
+          "name": "Rotterdam Gateway Terminal",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "uncertain",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "unconfirmed",
+        "is_gated": true,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Unknown domain, sensationalized language, score falls below gate threshold 35.0, held as unconfirmed without alert generation.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-21",
+    "scenario_description": "Conflicting reports: major wire says strike averted, tabloid says shutdown ongoing",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Hamburg dock strike officially called off after midnight collective agreement",
+      "snippet": "Hamburg port operators and ver.di union announced full agreement at 2 AM. All shifts are working normally today with zero delays.",
+      "source_url": "https://reuters.com/business/hamburg-port-strike-averted",
+      "published_days_ago": 0.1,
+      "event_type": "strike",
+      "location_mentioned": "Hamburg, Germany",
+      "coordinates": [
+        53.5511,
+        9.9937
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-hamburg",
+          "name": "Hamburg Container Terminal",
+          "type": "route",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "resolved",
+      "is_relevant": false,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-hamburg"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Authoritative resolution report; strike averted/called off.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-22",
+    "scenario_description": "Unsupported social media claim without evidence or source attribution",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Heard that Shanghai container terminal might close tomorrow due to sudden inspection",
+      "snippet": "Chatter on forums claims customs officers might halt container gates tomorrow morning. Nobody has official confirmation yet.",
+      "source_url": "https://forum-chatter.net/threads/shanghai-port-rumor",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Shanghai, China",
+      "coordinates": [
+        31.2304,
+        121.4737
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-shanghai",
+          "name": "Shanghai Deepwater Port",
+          "type": "route",
+          "location": "Shanghai, China",
+          "criticality": "high",
+          "latitude": 31.2304,
+          "longitude": 121.4737
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "uncertain",
+      "is_relevant": false,
+      "credibility": {
+        "expected_band": "unconfirmed",
+        "is_gated": true,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-shanghai"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Speculative unverified rumor from low-credibility forum. Gated and reviewable.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-23",
+    "scenario_description": "Accurate article containing zero business or supply chain disruption \u2014 sports stadium delay",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Heavy rain delays start of championship tennis match at Olympic stadium",
+      "snippet": "Afternoon thunderstorms forced tournament officials to delay the men's singles semifinal by three hours until the court dried. Spectators were entertained with indoor replays.",
+      "source_url": "https://espn.com/tennis/rain-delay-semifinal",
+      "published_days_ago": 0.3,
+      "event_type": "weather",
+      "location_mentioned": "Munich, Germany",
+      "coordinates": [
+        48.1351,
+        11.582
+      ],
+      "mock_weather": {
+        "precipitation_mm": 25.0,
+        "wind_speed_kmh": 15.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-auto-munich",
+          "name": "Munich Precision Engineering",
+          "type": "factory",
+          "location": "Munich, Germany",
+          "criticality": "high",
+          "latitude": 48.1351,
+          "longitude": 11.582
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "irrelevant",
+      "is_relevant": false,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Event is genuine sports rain delay, completely irrelevant to commercial supply chain or configured business.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-24",
+    "scenario_description": "Celebrity entertainment news with strike keywords \u2014 false positive trap",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Broadway actors union reaches tentative contract agreement, averting weekend walkout",
+      "snippet": "Theater producers and performers reached a last-minute pact early Friday. All Broadway weekend musical shows will proceed as scheduled.",
+      "source_url": "https://variety.com/theater/broadway-union-agreement",
+      "published_days_ago": 0.4,
+      "event_type": "strike",
+      "location_mentioned": "New York, United States",
+      "coordinates": [
+        40.7128,
+        -74.006
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-ware-ny",
+          "name": "New York Distribution Hub",
+          "type": "warehouse",
+          "location": "New York, United States",
+          "criticality": "medium",
+          "latitude": 40.7128,
+          "longitude": -74.006
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "resolved",
+      "is_relevant": false,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Entertainment industry contract agreement, unrelated to supply chain operations.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-25",
+    "scenario_description": "High credibility single source on breaking rail incident without corroboration",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Reuters: Freight derailment on Singapore industrial spur disrupts chemical tankers",
+      "snippet": "Two cargo cars carrying bulk polymers jumped tracks inside Jurong industrial district at 6 AM. Jurong port railway operations halted during recovery.",
+      "source_url": "https://reuters.com/business/jurong-freight-derailment",
+      "published_days_ago": 0.1,
+      "event_type": "closure",
+      "location_mentioned": "Singapore, Singapore",
+      "coordinates": [
+        1.3521,
+        103.8198
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-jurong-chem",
+          "name": "Jurong Chemical Logistics Hub",
+          "type": "warehouse",
+          "location": "Singapore, Singapore",
+          "criticality": "high",
+          "latitude": 1.3521,
+          "longitude": 103.8198
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-jurong-chem"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-jurong-chem"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "High reputation single breaking source (score ~61); proves lack of corroboration does not inappropriately gate top-tier reports.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-26",
+    "scenario_description": "Exact duplicate URL submission in subsequent monitoring fetch",
+    "category": "source_quality_corroboration",
+    "input": {
+      "title": "Port of Rotterdam dockworkers strike enters third day, halting terminal operations",
+      "snippet": "All container loading at the Maasvlakte terminal remains halted as wage negotiations stalled this morning. Over 40 container ships are queued off the coast.",
+      "source_url": "https://reuters.com/business/rotterdam-port-strike-day-3",
+      "published_days_ago": 0.2,
+      "event_type": "strike",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-rotterdam",
+          "name": "Rotterdam Gateway Terminal",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-rotterdam"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Duplicate URL and payload; must deduplicate against P3-01 rather than counting as an additional alert or independent source.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-27",
+    "scenario_description": "Same-name cities in different states \u2014 Portland, Oregon vs Portland, Maine",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Severe flooding shuts grain elevators across Portland waterfront",
+      "snippet": "Record river surge has flooded docks and rail sidings at the grain terminals in Portland, Oregon. Grain loading is suspended for at least 3 days.",
+      "source_url": "https://oregonlive.com/news/portland-waterfront-flood",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Portland, Oregon, United States",
+      "coordinates": [
+        45.5152,
+        -122.6784
+      ],
+      "mock_weather": {
+        "precipitation_mm": 55.0,
+        "wind_speed_kmh": 15.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-grain-portland-me",
+          "name": "Portland Maine Cold Storage",
+          "type": "warehouse",
+          "location": "Portland, Maine, United States",
+          "criticality": "high",
+          "latitude": 43.6615,
+          "longitude": -70.2553
+        },
+        {
+          "id": "ent-grain-portland-or",
+          "name": "Portland Oregon Grain Terminal",
+          "type": "warehouse",
+          "location": "Portland, Oregon, United States",
+          "criticality": "high",
+          "latitude": 45.5152,
+          "longitude": -122.6784
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-grain-portland-or"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-grain-portland-or"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "State/coordinates distinguish Portland OR from Portland ME cleanly; does not mistakenly map to Maine.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-28",
+    "scenario_description": "Ambiguous same-name city without state specification \u2014 requires analyst review",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Warehouse strike halts operations across industrial sector in Springfield",
+      "snippet": "Logistics workers initiated a strike in Springfield today, picketing major distribution centers. Union officials announced operations will remain shuttered.",
+      "source_url": "https://apnews.com/article/springfield-warehouse-strike",
+      "published_days_ago": 0.3,
+      "event_type": "strike",
+      "location_mentioned": "Springfield",
+      "coordinates": null,
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-ware-spf-il",
+          "name": "Springfield Logistics Hub IL",
+          "type": "warehouse",
+          "location": "Springfield, Illinois, United States",
+          "criticality": "medium",
+          "latitude": 39.7817,
+          "longitude": -89.6501
+        },
+        {
+          "id": "ent-ware-spf-mo",
+          "name": "Springfield Logistics Hub MO",
+          "type": "warehouse",
+          "location": "Springfield, Missouri, United States",
+          "criticality": "medium",
+          "latitude": 37.2089,
+          "longitude": -93.2923
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_AMBIGUOUS",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Springfield is ambiguous between multiple configured facilities without geographic differentiator; must not arbitrarily guess.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-29",
+    "scenario_description": "Similarly named industrial parks in different cities",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Explosion destroys chemical plant in Phoenix Industrial Zone, Houston",
+      "snippet": "Emergency sirens sounded as a processing tank exploded in Phoenix Industrial Zone in east Houston. Chemical processing has been suspended.",
+      "source_url": "https://chron.com/houston-phoenix-zone-explosion",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Houston, Texas, United States",
+      "coordinates": [
+        29.7604,
+        -95.3698
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-houston-plant",
+          "name": "Phoenix Industrial Park Houston",
+          "type": "factory",
+          "location": "Houston, Texas, United States",
+          "criticality": "high",
+          "latitude": 29.7604,
+          "longitude": -95.3698
+        },
+        {
+          "id": "ent-arizona-plant",
+          "name": "Phoenix Logistics Hub Arizona",
+          "type": "factory",
+          "location": "Phoenix, Arizona, United States",
+          "criticality": "high",
+          "latitude": 33.4484,
+          "longitude": -112.074
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-houston-plant"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-houston-plant"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Word Phoenix in facility name must not override Houston geographic match.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-30",
+    "scenario_description": "Missing entity and event coordinates \u2014 unresolvable location",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Unspecified warehouse fire suspends shipments in regional sector",
+      "snippet": "Local authorities report a facility fire in an unnamed business district. Emergency response is ongoing.",
+      "source_url": "https://localnews.com/facility-fire-update",
+      "published_days_ago": 0.3,
+      "event_type": "closure",
+      "location_mentioned": "",
+      "coordinates": null,
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-ware-unknown",
+          "name": "Global Distribution Alpha",
+          "type": "warehouse",
+          "location": "Remote Industrial Sector",
+          "criticality": "medium",
+          "latitude": null,
+          "longitude": null
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_UNRESOLVED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Empty location yields explicit LOCATION_UNRESOLVED and halts network impact propagation.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-31",
+    "scenario_description": "Invalid geographic coordinates out of range (latitude > 90)",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Severe blizzard halts freight routes across northern terminal",
+      "snippet": "Heavy snowfall has blocked main terminal access roads. Trucks are halted at check gates.",
+      "source_url": "https://weather-news.org/blizzard-terminal-closure",
+      "published_days_ago": 0.2,
+      "event_type": "weather",
+      "location_mentioned": "Hamburg, Germany",
+      "coordinates": [
+        135.5,
+        9.9937
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-hamburg-depot",
+          "name": "Hamburg Freight Center",
+          "type": "warehouse",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_PARTIALLY_VERIFIED",
+        "matched_entity_id": "ent-hamburg-depot"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-hamburg-depot"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "insufficient_coverage",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Latitude 135.5 is geographically impossible; rejected by coordinate validation without crashing.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-32",
+    "scenario_description": "Null Island coordinates (0.0, 0.0) must be rejected",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Tropical storm brings flash flood to coastal distribution hub",
+      "snippet": "Heavy squalls submerged parking and loading docks at the logistics park.",
+      "source_url": "https://maritime-news.com/tropical-storm-hub",
+      "published_days_ago": 0.3,
+      "event_type": "flood",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        0.0,
+        0.0
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-rotterdam",
+          "name": "Rotterdam Logistics Port",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_PARTIALLY_VERIFIED",
+        "matched_entity_id": "ent-port-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-rotterdam"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "insufficient_coverage",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "(0, 0) coordinates treated as invalid placeholder / Null Island; weather check returns insufficient_coverage.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-33",
+    "scenario_description": "Article text explicitly conflicts with geocoded coordinates",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Severe flooding paralyzes automotive suppliers across Shanghai Pudong",
+      "snippet": "Record rainfall has submerged supplier warehouses in Pudong, Shanghai. All outbound logistics are halted.",
+      "source_url": "https://reuters.com/world/china/pudong-supplier-flood",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Shanghai, China",
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-shanghai-plant",
+          "name": "Shanghai Pudong Assembly",
+          "type": "factory",
+          "location": "Shanghai, China",
+          "criticality": "high",
+          "latitude": 31.2304,
+          "longitude": 121.4737
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_PARTIALLY_VERIFIED",
+        "matched_entity_id": "ent-shanghai-plant"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-shanghai-plant"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "insufficient_coverage",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Text says Shanghai but coordinate is London (51.5, -0.1). Textual administrative hierarchy resolves entity match while coordinate conflict triggers fallback.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-34",
+    "scenario_description": "Event equidistant to multiple configured facilities in same industrial hub",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Power substation explosion disables electricity across Maasvlakte industrial park",
+      "snippet": "A major transformer failure knocked out power across the Maasvlakte logistics cluster in Rotterdam, impacting multiple adjacent terminals.",
+      "source_url": "https://dutch-news.nl/maasvlakte-power-failure",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.95,
+        4.05
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-maas-1",
+          "name": "Maasvlakte Terminal Alpha",
+          "type": "warehouse",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.951,
+          "longitude": 4.052
+        },
+        {
+          "id": "ent-maas-2",
+          "name": "Maasvlakte Terminal Beta",
+          "type": "warehouse",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.949,
+          "longitude": 4.048
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_AMBIGUOUS",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Multiple proximate facilities in close range with close confidence delta; held as LOCATION_AMBIGUOUS for analyst disambiguation.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-35",
+    "scenario_description": "Clear location but no established operational relationship to configured business",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Wildfire destroys timber processing plants in northern Alberta",
+      "snippet": "Fast-moving forest fire consumed two lumber mills near Fort McMurray. Highway 63 remains closed.",
+      "source_url": "https://cbc.ca/news/alberta-wildfire-timber",
+      "published_days_ago": 0.3,
+      "event_type": "closure",
+      "location_mentioned": "Fort McMurray, Alberta, Canada",
+      "coordinates": [
+        56.7264,
+        -111.3803
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-fact-berlin",
+          "name": "Berlin Precision Machining",
+          "type": "factory",
+          "location": "Berlin, Germany",
+          "criticality": "high",
+          "latitude": 52.52,
+          "longitude": 13.405
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_UNRESOLVED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Genuine event in Canada, but configured network is in Germany; zero entity match, no impact propagation.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-36",
+    "scenario_description": "Vague regional reference that must remain unresolved without guessing",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Truck driver strike disrupts freight across Western Europe",
+      "snippet": "Scattered road blockades reported along major transport corridors in Western Europe.",
+      "source_url": "https://ft.com/logistics/europe-truck-strike",
+      "published_days_ago": 0.2,
+      "event_type": "strike",
+      "location_mentioned": "Western Europe",
+      "coordinates": null,
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-rotterdam-hub",
+          "name": "Rotterdam Logistics Port",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_PARTIALLY_VERIFIED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Continent-level vague region cannot be pinned to specific entity without guessing.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-37",
+    "scenario_description": "Disambiguating Hyderabad India from Hyderabad Pakistan",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Flash floods submerge textile export mills in Hyderabad Sindh province",
+      "snippet": "Inundation has damaged spinning machinery across the industrial estate in Hyderabad, Pakistan. Rail links to Karachi are flooded.",
+      "source_url": "https://dawn.com/news/hyderabad-textile-flood",
+      "published_days_ago": 0.3,
+      "event_type": "flood",
+      "location_mentioned": "Hyderabad, Pakistan",
+      "coordinates": [
+        25.396,
+        68.3578
+      ],
+      "mock_weather": {
+        "precipitation_mm": 50.0,
+        "wind_speed_kmh": 15.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-it-hyderabad-in",
+          "name": "Hyderabad Technology Campus",
+          "type": "factory",
+          "location": "Hyderabad, Telangana, India",
+          "criticality": "high",
+          "latitude": 17.385,
+          "longitude": 78.4867
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_UNRESOLVED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Country and province mismatch prevents false match between Hyderabad Pakistan and Hyderabad India.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-38",
+    "scenario_description": "Disambiguating San Jose California from San Jose Costa Rica",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Substation fire knocks out power to Silicon Valley assembly plants in San Jose",
+      "snippet": "Emergency repairs underway in North San Jose, California following transformer explosion at dawn.",
+      "source_url": "https://mercurynews.com/san-jose-substation-blackout",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "San Jose, California, United States",
+      "coordinates": [
+        37.3382,
+        -121.8863
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-costa-rica-fab",
+          "name": "San Jose Medical Devices Facility",
+          "type": "factory",
+          "location": "San Jose, Costa Rica",
+          "criticality": "high",
+          "latitude": 9.9281,
+          "longitude": -84.0907
+        },
+        {
+          "id": "ent-california-fab",
+          "name": "San Jose Silicon Assembly",
+          "type": "factory",
+          "location": "San Jose, California, United States",
+          "criticality": "high",
+          "latitude": 37.3382,
+          "longitude": -121.8863
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-california-fab"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-california-fab"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Administrative hierarchy correctly attaches event to California entity and abstains from Costa Rica.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-39",
+    "scenario_description": "Unresolved location cannot trigger high-confidence NetworkX impact propagation",
+    "category": "geography_entity_matching",
+    "input": {
+      "title": "Unidentified facility fire halts shipments somewhere in North America",
+      "snippet": "Early morning fire destroyed packaging materials at an unnamed facility.",
+      "source_url": "https://unverified-blog.org/unnamed-fire",
+      "published_days_ago": 0.3,
+      "event_type": "closure",
+      "location_mentioned": "Somewhere in North America",
+      "coordinates": null,
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-supp-austin",
+          "name": "Austin Semiconductor Fab",
+          "type": "supplier",
+          "location": "Austin, Texas, United States",
+          "criticality": "high",
+          "latitude": 30.2672,
+          "longitude": -97.7431
+        },
+        {
+          "id": "ent-fact-dallas",
+          "name": "Dallas Device Assembly",
+          "type": "factory",
+          "location": "Dallas, Texas, United States",
+          "criticality": "high",
+          "latitude": 32.7767,
+          "longitude": -96.797
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel-tx-1",
+          "source_id": "ent-fact-dallas",
+          "target_id": "ent-supp-austin",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.9
+        }
+      ]
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "unconfirmed",
+        "is_gated": true,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_UNRESOLVED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "When event location is unresolved, entity matching must abstain and NetworkX downstream propagation must NOT occur.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-40",
+    "scenario_description": "Direct supplier disruption propagating to dependent factory",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Severe fire closes Rotterdam lithium battery components plant",
+      "snippet": "Chemical fire destroyed assembly machinery at the battery supplier facility. Output is halted for 6 weeks.",
+      "source_url": "https://reuters.com/business/rotterdam-battery-fire",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-supp-rotterdam",
+          "name": "Rotterdam Battery Components",
+          "type": "supplier",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        },
+        {
+          "id": "ent-fact-amsterdam",
+          "name": "Amsterdam EV Assembly Plant",
+          "type": "factory",
+          "location": "Amsterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 52.3676,
+          "longitude": 4.9041
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel-ev-1",
+          "source_id": "ent-fact-amsterdam",
+          "target_id": "ent-supp-rotterdam",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.9
+        }
+      ]
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-supp-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-supp-rotterdam"
+        ],
+        "downstream_impacted_entities": [
+          "ent-fact-amsterdam"
+        ],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Direct supplier hit: Rotterdam supplier is directly impacted; Amsterdam factory depends on it, so it is downstream impacted.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-41",
+    "scenario_description": "Warehouse disruption affecting downstream distribution customers",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Flooding submerges Central Hamburg logistics warehouse",
+      "snippet": "River overflow inundated logistics docks at Hamburg Central Warehouse. Storage inventory is stranded.",
+      "source_url": "https://ft.com/logistics/hamburg-warehouse-inundation",
+      "published_days_ago": 0.3,
+      "event_type": "flood",
+      "location_mentioned": "Hamburg, Germany",
+      "coordinates": [
+        53.5511,
+        9.9937
+      ],
+      "mock_weather": {
+        "precipitation_mm": 50.0,
+        "wind_speed_kmh": 22.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-ware-hamburg",
+          "name": "Hamburg Central Logistics Warehouse",
+          "type": "warehouse",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        },
+        {
+          "id": "ent-cust-berlin",
+          "name": "Berlin Retail Distribution Center",
+          "type": "customer",
+          "location": "Berlin, Germany",
+          "criticality": "medium",
+          "latitude": 52.52,
+          "longitude": 13.405
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel-wh-1",
+          "source_id": "ent-cust-berlin",
+          "target_id": "ent-ware-hamburg",
+          "relationship_type": "ships_to",
+          "dependency_weight": 0.8
+        }
+      ]
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-ware-hamburg"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-ware-hamburg"
+        ],
+        "downstream_impacted_entities": [
+          "ent-cust-berlin"
+        ],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Warehouse hit propagates downstream to customer distribution hub.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-42",
+    "scenario_description": "Route disruption affecting downstream manufacturing facilities",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Suez Canal blockage stops container ship transit through northern corridor",
+      "snippet": "Grounded container vessel has halted all northbound and southbound convoys through the canal.",
+      "source_url": "https://reuters.com/world/middle-east/suez-transit-halted",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Suez Canal",
+      "coordinates": [
+        29.9737,
+        32.5599
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-route-suez",
+          "name": "Suez Maritime Route",
+          "type": "route",
+          "location": "Suez, Egypt",
+          "criticality": "high",
+          "latitude": 29.9737,
+          "longitude": 32.5599
+        },
+        {
+          "id": "ent-fact-rotterdam",
+          "name": "Rotterdam Chemical Refining Plant",
+          "type": "factory",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel-suez-1",
+          "source_id": "ent-fact-rotterdam",
+          "target_id": "ent-route-suez",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.7
+        }
+      ]
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-route-suez"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-route-suez"
+        ],
+        "downstream_impacted_entities": [
+          "ent-fact-rotterdam"
+        ],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Route entity disruption cascades to dependent processing facility.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-43",
+    "scenario_description": "Upstream supplier disruption with multiple dependent factories (fan-out)",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Explosion destroys primary silicon wafer polishing facility in Hsinchu",
+      "snippet": "Catastrophic boiler explosion destroyed the primary polishing cleanroom in Hsinchu Science Park, halting all silicon wafer deliveries.",
+      "source_url": "https://bloomberg.com/news/hsinchu-polishing-explosion",
+      "published_days_ago": 0.1,
+      "event_type": "closure",
+      "location_mentioned": "Hsinchu, Taiwan",
+      "coordinates": [
+        24.8138,
+        120.9675
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-supp-hsinchu",
+          "name": "Hsinchu Raw Silicon Supply",
+          "type": "supplier",
+          "location": "Hsinchu, Taiwan",
+          "criticality": "high",
+          "latitude": 24.8138,
+          "longitude": 120.9675
+        },
+        {
+          "id": "ent-fact-dresden",
+          "name": "Dresden Fab A",
+          "type": "factory",
+          "location": "Dresden, Germany",
+          "criticality": "high",
+          "latitude": 51.0504,
+          "longitude": 13.7373
+        },
+        {
+          "id": "ent-fact-austin",
+          "name": "Austin Fab B",
+          "type": "factory",
+          "location": "Austin, Texas, United States",
+          "criticality": "high",
+          "latitude": 30.2672,
+          "longitude": -97.7431
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel-fan-1",
+          "source_id": "ent-fact-dresden",
+          "target_id": "ent-supp-hsinchu",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.8
+        },
+        {
+          "id": "rel-fan-2",
+          "source_id": "ent-fact-austin",
+          "target_id": "ent-supp-hsinchu",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.8
+        }
+      ]
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-supp-hsinchu"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-supp-hsinchu"
+        ],
+        "downstream_impacted_entities": [
+          "ent-fact-dresden",
+          "ent-fact-austin"
+        ],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Single upstream supplier node disruption correctly cascades to both dependent factories.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-44",
+    "scenario_description": "CRITICAL DIRECTIONALITY TEST: Downstream customer disruption MUST NOT propagate upstream to supplier",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Munich retail showroom closure due to localized electrical repair",
+      "snippet": "End customer retail facility in Munich temporarily closed showroom today for routine electrical service.",
+      "source_url": "https://local-munich-news.de/retail-closure",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Munich, Germany",
+      "coordinates": [
+        48.1351,
+        11.582
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-raw-chile",
+          "name": "Santiago Raw Material Mining",
+          "type": "supplier",
+          "location": "Santiago, Chile",
+          "criticality": "high",
+          "latitude": -33.4489,
+          "longitude": -70.6693
+        },
+        {
+          "id": "ent-fact-berlin",
+          "name": "Berlin Component Assembly",
+          "type": "factory",
+          "location": "Berlin, Germany",
+          "criticality": "high",
+          "latitude": 52.52,
+          "longitude": 13.405
+        },
+        {
+          "id": "ent-cust-munich",
+          "name": "Munich End Customer Showroom",
+          "type": "customer",
+          "location": "Munich, Germany",
+          "criticality": "low",
+          "latitude": 48.1351,
+          "longitude": 11.582
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel-chain-1",
+          "source_id": "ent-fact-berlin",
+          "target_id": "ent-raw-chile",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.9
+        },
+        {
+          "id": "rel-chain-2",
+          "source_id": "ent-cust-munich",
+          "target_id": "ent-fact-berlin",
+          "relationship_type": "ships_to",
+          "dependency_weight": 1.0
+        }
+      ]
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-cust-munich"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-cust-munich"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Munich customer is disrupted. The factory in Berlin and supplier in Chile are UPSTREAM; they must NEVER be marked as downstream impacted!",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-45",
+    "scenario_description": "Multi-hop linear dependency chain respecting max depth limit",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Raw mineral mine in Santiago shut down by regional environmental order",
+      "snippet": "Mining authority ordered an immediate 30-day shutdown of lithium extraction facilities outside Santiago.",
+      "source_url": "https://reuters.com/business/chile-lithium-mine-shutdown",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Santiago, Chile",
+      "coordinates": [
+        -33.4489,
+        -70.6693
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-hop-1",
+          "name": "Santiago Mining",
+          "type": "supplier",
+          "location": "Santiago, Chile",
+          "criticality": "high",
+          "latitude": -33.4489,
+          "longitude": -70.6693
+        },
+        {
+          "id": "ent-hop-2",
+          "name": "Rotterdam Refinery",
+          "type": "factory",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        },
+        {
+          "id": "ent-hop-3",
+          "name": "Hamburg Battery Pack",
+          "type": "factory",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        },
+        {
+          "id": "ent-hop-4",
+          "name": "Munich Final Assembly",
+          "type": "factory",
+          "location": "Munich, Germany",
+          "criticality": "high",
+          "latitude": 48.1351,
+          "longitude": 11.582
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel-hop-12",
+          "source_id": "ent-hop-2",
+          "target_id": "ent-hop-1",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.9
+        },
+        {
+          "id": "rel-hop-23",
+          "source_id": "ent-hop-3",
+          "target_id": "ent-hop-2",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.8
+        },
+        {
+          "id": "rel-hop-34",
+          "source_id": "ent-hop-4",
+          "target_id": "ent-hop-3",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.7
+        }
+      ]
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-hop-1"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-hop-1"
+        ],
+        "downstream_impacted_entities": [
+          "ent-hop-2",
+          "ent-hop-3",
+          "ent-hop-4"
+        ],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "3-hop downstream chain from supplier to final assembly correctly propagates in correct topological direction.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-46",
+    "scenario_description": "Geographically close but operationally unrelated facility \u2014 proximity does not imply dependency",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Fire destroys neighboring bakery warehouse adjacent to Rotterdam Container Port",
+      "snippet": "Blaze consumed an artisanal bakery distribution center located 200 meters outside Rotterdam port gate. Port gates and container terminals remain unaffected.",
+      "source_url": "https://local-rotterdam.nl/bakery-fire",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-rotterdam",
+          "name": "Rotterdam Container Terminal",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        },
+        {
+          "id": "ent-auto-berlin",
+          "name": "Berlin Automotive Factory",
+          "type": "factory",
+          "location": "Berlin, Germany",
+          "criticality": "high",
+          "latitude": 52.52,
+          "longitude": 13.405
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-rotterdam"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Berlin factory is in network, but has NO relationship edge with Rotterdam; zero propagation to Berlin despite common network membership.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-47",
+    "scenario_description": "Real severe disruption with ZERO business exposure to configured enterprise",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Massive earthquake shuts all factories and ports across Sendai prefecture",
+      "snippet": "Magnitude 7.2 earthquake caused extensive damage across Sendai industrial sector. All infrastructure halted indefinitely.",
+      "source_url": "https://reuters.com/world/asia-pacific/sendai-earthquake-damage",
+      "published_days_ago": 0.1,
+      "event_type": "closure",
+      "location_mentioned": "Sendai, Japan",
+      "coordinates": [
+        38.2682,
+        140.8694
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-fact-austin",
+          "name": "Austin Semiconductor Fab",
+          "type": "factory",
+          "location": "Austin, Texas, United States",
+          "criticality": "high",
+          "latitude": 30.2672,
+          "longitude": -97.7431
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_UNRESOLVED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Severe event, high credibility, but the business has zero facilities or suppliers in Sendai; business risk must be zero.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-48",
+    "scenario_description": "Severe event with LOW business exposure (qualified alternative supplier, low dependency weight)",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Complete shutdown of secondary packaging supplier in Dresden",
+      "snippet": "Packaging provider closed due to environmental compliance violation. Shipments stopped.",
+      "source_url": "https://handelsblatt.com/dresden-packaging-shutdown",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Dresden, Germany",
+      "coordinates": [
+        51.0504,
+        13.7373
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-supp-dresden",
+          "name": "Dresden Packaging Secondary",
+          "type": "supplier",
+          "location": "Dresden, Germany",
+          "criticality": "low",
+          "latitude": 51.0504,
+          "longitude": 13.7373
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-supp-dresden"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-supp-dresden"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Entity is low criticality, alternative supplier available; risk score reflects low business exposure despite genuine disruption.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-49",
+    "scenario_description": "Moderate event with HIGH business exposure (sole supplier, 100% dependency weight, 60 days lead time)",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Two-day technical delay reported at sole optical lens grinding facility",
+      "snippet": "Calibration maintenance will halt optical lens grinding for 48 hours at the specialized facility in Hsinchu.",
+      "source_url": "https://reuters.com/business/hsinchu-lens-grinding-delay",
+      "published_days_ago": 0.1,
+      "event_type": "closure",
+      "location_mentioned": "Hsinchu, Taiwan",
+      "coordinates": [
+        24.8138,
+        120.9675
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-supp-lens",
+          "name": "Hsinchu Precision Optical Lenses",
+          "type": "supplier",
+          "location": "Hsinchu, Taiwan",
+          "criticality": "high",
+          "latitude": 24.8138,
+          "longitude": 120.9675
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-supp-lens"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-supp-lens"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "High criticality, single-source vulnerability, maximum lead time yields elevated risk score.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-50",
+    "scenario_description": "Diamond graph topology (A -> B -> D and A -> C -> D) must NOT duplicate impact on D",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Central hub closure halts shipments from Primary Component Supplier",
+      "snippet": "Fire at Primary Component Supplier halts all output.",
+      "source_url": "https://reuters.com/business/component-supplier-fire",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-dia-a",
+          "name": "Primary Component Supplier",
+          "type": "supplier",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        },
+        {
+          "id": "ent-dia-b",
+          "name": "Sub-Assembly Plant 1",
+          "type": "factory",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        },
+        {
+          "id": "ent-dia-c",
+          "name": "Sub-Assembly Plant 2",
+          "type": "factory",
+          "location": "Munich, Germany",
+          "criticality": "high",
+          "latitude": 48.1351,
+          "longitude": 11.582
+        },
+        {
+          "id": "ent-dia-d",
+          "name": "Final Assembly Hub",
+          "type": "factory",
+          "location": "Berlin, Germany",
+          "criticality": "high",
+          "latitude": 52.52,
+          "longitude": 13.405
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel-dia-ab",
+          "source_id": "ent-dia-b",
+          "target_id": "ent-dia-a",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.8
+        },
+        {
+          "id": "rel-dia-ac",
+          "source_id": "ent-dia-c",
+          "target_id": "ent-dia-a",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.8
+        },
+        {
+          "id": "rel-dia-bd",
+          "source_id": "ent-dia-d",
+          "target_id": "ent-dia-b",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.7
+        },
+        {
+          "id": "rel-dia-cd",
+          "source_id": "ent-dia-d",
+          "target_id": "ent-dia-c",
+          "relationship_type": "depends_on",
+          "dependency_weight": 0.7
+        }
+      ]
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-dia-a"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-dia-a"
+        ],
+        "downstream_impacted_entities": [
+          "ent-dia-b",
+          "ent-dia-c",
+          "ent-dia-d"
+        ],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Node D has two incoming paths from A; graph traversal must deduplicate nodes and not count D multiple times.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-51",
+    "scenario_description": "Missing relationship edge does not imply dependency",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Dockers strike at Port of Antwerp stops container handling",
+      "snippet": "Antwerp port terminals are shut down by full strike action.",
+      "source_url": "https://reuters.com/business/antwerp-strike-active",
+      "published_days_ago": 0.2,
+      "event_type": "strike",
+      "location_mentioned": "Antwerp, Belgium",
+      "coordinates": [
+        51.2194,
+        4.4025
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-antwerp",
+          "name": "Antwerp Container Port",
+          "type": "route",
+          "location": "Antwerp, Belgium",
+          "criticality": "high",
+          "latitude": 51.2194,
+          "longitude": 4.4025
+        },
+        {
+          "id": "ent-fact-paris",
+          "name": "Paris Manufacturing Center",
+          "type": "factory",
+          "location": "Paris, France",
+          "criticality": "high",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-antwerp"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-antwerp"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "No relationship defined between Antwerp and Paris; system never hallucinates dependency.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-52",
+    "scenario_description": "Isolated node in graph has zero downstream impacts",
+    "category": "business_impact_analysis",
+    "input": {
+      "title": "Facility maintenance shuts standalone warehouse in Shanghai",
+      "snippet": "Routine structural upgrades suspend operations at standalone warehouse facility.",
+      "source_url": "https://shanghaidaily.com/warehouse-upgrade",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Shanghai, China",
+      "coordinates": [
+        31.2304,
+        121.4737
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-iso-shanghai",
+          "name": "Shanghai Standalone Storage",
+          "type": "warehouse",
+          "location": "Shanghai, China",
+          "criticality": "low",
+          "latitude": 31.2304,
+          "longitude": 121.4737
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-iso-shanghai"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-iso-shanghai"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Isolated node has 0 edges; downstream impacted list is empty.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-53",
+    "scenario_description": "Current localized heavy rainfall confirming flood disruption",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Torrential rain inundates Surat industrial district, submerging factories",
+      "snippet": "Severe waterlogging has submerged industrial roads and ground floors across Surat textile estate.",
+      "source_url": "https://reuters.com/world/india/surat-industrial-flooding",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Surat, Gujarat, India",
+      "coordinates": [
+        21.17024,
+        72.83106
+      ],
+      "mock_weather": {
+        "precipitation_mm": 55.0,
+        "wind_speed_kmh": 22.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-textile-surat",
+          "name": "Surat Industrial Weaving Facility",
+          "type": "factory",
+          "location": "Surat, Gujarat, India",
+          "criticality": "high",
+          "latitude": 21.17024,
+          "longitude": 72.83106
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-textile-surat"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-textile-surat"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Precipitation 55mm exceeds 20mm threshold; confirmed weather adds +1 corroboration.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-54",
+    "scenario_description": "Severe storm with gale-force winds confirming weather disruption",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Severe gale forces closure of Hamburg port crane operations",
+      "snippet": "High winds gusting over 80 km/h forced container terminals in Hamburg to cease crane movements.",
+      "source_url": "https://reuters.com/business/hamburg-port-storm-closure",
+      "published_days_ago": 0.2,
+      "event_type": "weather",
+      "location_mentioned": "Hamburg, Germany",
+      "coordinates": [
+        53.5511,
+        9.9937
+      ],
+      "mock_weather": {
+        "precipitation_mm": 5.0,
+        "wind_speed_kmh": 85.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-hamburg",
+          "name": "Hamburg Container Hub",
+          "type": "route",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-hamburg"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-hamburg"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Wind speed 85 km/h satisfies weather disruption threshold (>=40 km/h); confirmed classification.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-55",
+    "scenario_description": "Calm sunny weather during claimed active flash flood \u2014 genuine contradictory evidence",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Massive sudden rainstorm floods automotive plant in Munich today",
+      "snippet": "Claims that a severe flash storm dumped 100mm of rain inside an hour, flooding assembly floors.",
+      "source_url": "https://unverified-local.de/munich-storm-claim",
+      "published_days_ago": 0.1,
+      "event_type": "flood",
+      "location_mentioned": "Munich, Germany",
+      "coordinates": [
+        48.1351,
+        11.582
+      ],
+      "mock_weather": {
+        "precipitation_mm": 0.2,
+        "wind_speed_kmh": 6.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-fact-munich",
+          "name": "Munich Assembly Plant",
+          "type": "factory",
+          "location": "Munich, Germany",
+          "criticality": "high",
+          "latitude": 48.1351,
+          "longitude": 11.582
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "unconfirmed",
+        "is_gated": true,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-fact-munich"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "not_supported",
+        "penalizes_credibility": true
+      },
+      "human_review_required": true
+    },
+    "rationale": "Telemetric observation shows 0.2mm rain during claimed local storm; valid not_supported classification with -15 credibility penalty.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-56",
+    "scenario_description": "Flooding caused by upstream river overflow / dam release when local rainfall is 0mm",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Industrial estate submerged as upstream dam releases floodwaters along Tapi river",
+      "snippet": "Emergency release from Ukai Dam upstream sent massive river surge into downstream Surat industrial zones. Factory floors are inundated under 3 feet of river water despite clear sunny skies locally today.",
+      "source_url": "https://timesofindia.com/city/surat/dam-release-floods-industrial-zone",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Surat, Gujarat, India",
+      "coordinates": [
+        21.17024,
+        72.83106
+      ],
+      "mock_weather": {
+        "precipitation_mm": 0.0,
+        "wind_speed_kmh": 4.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-textile-surat",
+          "name": "Surat Textile Manufacturing Hub",
+          "type": "factory",
+          "location": "Surat, Gujarat, India",
+          "criticality": "high",
+          "latitude": 21.17024,
+          "longitude": 72.83106
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-textile-surat"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-textile-surat"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "insufficient_coverage",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Flood from upstream dam release/river overflow. Local rain is low, but local rain CANNOT disprove upstream river flooding. Must NOT be penalized as not_supported (-15).",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-57",
+    "scenario_description": "Flood caused by storm surge / tidal overflow rather than local cloudburst",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Tidal surge and river overflow submerge dockside access roads at Rotterdam port",
+      "snippet": "High spring tide coupled with North Sea river surge inundated low-lying container access corridors at the port. Rainfall has ceased but waters remain knee-deep.",
+      "source_url": "https://reuters.com/business/rotterdam-tidal-surge-flooding",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": {
+        "precipitation_mm": 1.5,
+        "wind_speed_kmh": 25.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-rotterdam",
+          "name": "Rotterdam Logistics Port",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-rotterdam"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "insufficient_coverage",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Tidal/surge flood cannot be validated or contradicted solely by local precipitation telemetry; penalty suppressed.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-58",
+    "scenario_description": "Flood claim with missing entity coordinates \u2014 returns insufficient_coverage without penalty",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Flash flooding halts assembly lines at Dhaka manufacturing plant",
+      "snippet": "Heavy cloudburst inundated production floors halting all stitching operations.",
+      "source_url": "https://dhakatribune.com/bangladesh-factory-flood",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Dhaka, Bangladesh",
+      "coordinates": null,
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-dhaka-textile",
+          "name": "Dhaka Export Facility",
+          "type": "factory",
+          "location": "Dhaka, Bangladesh",
+          "criticality": "medium",
+          "latitude": null,
+          "longitude": null
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_PARTIALLY_VERIFIED",
+        "matched_entity_id": "ent-dhaka-textile"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-dhaka-textile"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "insufficient_coverage",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Missing coordinates prevent weather telemetry query; must yield insufficient_coverage with zero penalty.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-59",
+    "scenario_description": "Historical flood event outside 48-hour observation telemetry window",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Factory cleans mud and assesses water damage from last week's river flood",
+      "snippet": "Three days after major river flooding receded, workers continue removing mud and repairing damaged transformers.",
+      "source_url": "https://reuters.com/business/factory-flood-cleanup",
+      "published_days_ago": 3.5,
+      "event_type": "flood",
+      "location_mentioned": "Sendai, Japan",
+      "coordinates": [
+        38.2682,
+        140.8694
+      ],
+      "mock_weather": {
+        "precipitation_mm": 0.0,
+        "wind_speed_kmh": 8.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-sendai-clean",
+          "name": "Sendai Precision Works",
+          "type": "factory",
+          "location": "Sendai, Japan",
+          "criticality": "high",
+          "latitude": 38.2682,
+          "longitude": 140.8694
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-sendai-clean"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-sendai-clean"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "insufficient_coverage",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Article timestamp is >48 hours old; real-time 24h weather telemetry is temporally inapplicable -> insufficient_coverage.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-60",
+    "scenario_description": "Weather provider API timeout or network error \u2014 neutral handling",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Severe flooding stops freight traffic through Hamburg rail siding",
+      "snippet": "Rail tracks submerged by heavy storm water accumulation.",
+      "source_url": "https://reuters.com/transport/hamburg-storm-rail",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Hamburg, Germany",
+      "coordinates": [
+        53.5511,
+        9.9937
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-hamburg",
+          "name": "Hamburg Container Hub",
+          "type": "route",
+          "location": "Hamburg, Germany",
+          "criticality": "high",
+          "latitude": 53.5511,
+          "longitude": 9.9937
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-hamburg"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-hamburg"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "unavailable",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Weather API returned None (simulating HTTP timeout); classification is unavailable, zero penalty, cycle continues smoothly.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-61",
+    "scenario_description": "Non-weather event type (labor strike) \u2014 weather service must return not_checked",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Dockworkers strike shuts down container terminal in Rotterdam",
+      "snippet": "All cranes idle as labor union stages 48-hour wage strike.",
+      "source_url": "https://ft.com/rotterdam-dockers-strike",
+      "published_days_ago": 0.2,
+      "event_type": "strike",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-rotterdam",
+          "name": "Rotterdam Logistics Port",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-rotterdam"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Strike is not in EVENT_WEATHER_MAP; returns not_checked with zero impact.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-62",
+    "scenario_description": "Non-weather event type (cyber attack) \u2014 weather service must return not_checked",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Ransomware locks operational networks across Detroit automotive supplier",
+      "snippet": "Automated warehouse conveyors stopped after ransomware payload encrypted control servers.",
+      "source_url": "https://wsj.com/cyber/detroit-supplier-ransomware",
+      "published_days_ago": 0.2,
+      "event_type": "closure",
+      "location_mentioned": "Detroit, United States",
+      "coordinates": [
+        42.3314,
+        -83.0458
+      ],
+      "mock_weather": null
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-supp-detroit",
+          "name": "Detroit Auto Components",
+          "type": "supplier",
+          "location": "Detroit, United States",
+          "criticality": "high",
+          "latitude": 42.3314,
+          "longitude": -83.0458
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-supp-detroit"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-supp-detroit"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "not_checked",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Cyber closure is not weather; classification is not_checked.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-63",
+    "scenario_description": "Weather confirmed by high rainfall but entity is geographically unrelated",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Heavy monsoon rains submerge coastal areas in Mumbai",
+      "snippet": "Monsoon downpours caused widespread street flooding in south Mumbai.",
+      "source_url": "https://reuters.com/world/india/mumbai-monsoon-rain",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Mumbai, Maharashtra, India",
+      "coordinates": [
+        19.076,
+        72.8777
+      ],
+      "mock_weather": {
+        "precipitation_mm": 70.0,
+        "wind_speed_kmh": 20.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-germany-fab",
+          "name": "Munich Precision Fabrication",
+          "type": "factory",
+          "location": "Munich, Germany",
+          "criticality": "high",
+          "latitude": 48.1351,
+          "longitude": 11.582
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_UNRESOLVED",
+        "matched_entity_id": null
+      },
+      "business_impact": {
+        "directly_impacted_entities": [],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": false
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": true
+    },
+    "rationale": "Weather telemetry confirms real monsoon in Mumbai, but business has 0 operations in India; weather confirmation does not create business impact.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-64",
+    "scenario_description": "Dam release flood in river basin with low local rain \u2014 explanation correctly notes upstream source",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "River overflow from upstream dam release causes flash flooding in industrial district",
+      "snippet": "Downstream manufacturing district inundated by dam water release from upstream reservoirs. Skies are clear locally.",
+      "source_url": "https://timesofindia.com/dam-release-inundation",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Ahmedabad, Gujarat, India",
+      "coordinates": [
+        23.0225,
+        72.5714
+      ],
+      "mock_weather": {
+        "precipitation_mm": 0.0,
+        "wind_speed_kmh": 8.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-ahmedabad-eng",
+          "name": "Ahmedabad Heavy Engineering",
+          "type": "factory",
+          "location": "Ahmedabad, Gujarat, India",
+          "criticality": "high",
+          "latitude": 23.0225,
+          "longitude": 72.5714
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "low",
+        "is_gated": false,
+        "corroboration_count": 0,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-ahmedabad-eng"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-ahmedabad-eng"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "insufficient_coverage",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "River overflow and dam release explicitly mentioned; local rain deficiency does not trigger contradictory penalty.",
+    "provenance": "synthetic_controlled_fixture"
+  },
+  {
+    "id": "P3-65",
+    "scenario_description": "Borderline precipitation exactly at 20.0mm threshold",
+    "category": "weather_evidence_audit",
+    "input": {
+      "title": "Heavy rainfall causes waterlogging along port container sidings",
+      "snippet": "Local weather station measured 20.0mm rainfall over the last 24 hours.",
+      "source_url": "https://reuters.com/business/port-waterlogging",
+      "published_days_ago": 0.2,
+      "event_type": "flood",
+      "location_mentioned": "Rotterdam, Netherlands",
+      "coordinates": [
+        51.9244,
+        4.4777
+      ],
+      "mock_weather": {
+        "precipitation_mm": 20.0,
+        "wind_speed_kmh": 18.0
+      }
+    },
+    "business_context": {
+      "entities": [
+        {
+          "id": "ent-port-rotterdam",
+          "name": "Rotterdam Gateway Terminal",
+          "type": "route",
+          "location": "Rotterdam, Netherlands",
+          "criticality": "high",
+          "latitude": 51.9244,
+          "longitude": 4.4777
+        }
+      ],
+      "relationships": []
+    },
+    "expected": {
+      "active_status": "active",
+      "is_relevant": true,
+      "credibility": {
+        "expected_band": "moderate",
+        "is_gated": false,
+        "corroboration_count": 1,
+        "is_syndicated": false
+      },
+      "location_match": {
+        "expected_status": "LOCATION_VERIFIED",
+        "matched_entity_id": "ent-port-rotterdam"
+      },
+      "business_impact": {
+        "directly_impacted_entities": [
+          "ent-port-rotterdam"
+        ],
+        "downstream_impacted_entities": [],
+        "propagates_upstream": false,
+        "has_business_risk": true
+      },
+      "weather": {
+        "expected_classification": "confirmed",
+        "penalizes_credibility": false
+      },
+      "human_review_required": false
+    },
+    "rationale": "Exact boundary value (20.0mm) satisfies >= threshold; confirmed status verified.",
+    "provenance": "synthetic_controlled_fixture"
+  }
+]

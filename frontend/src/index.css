@@ -1,0 +1,32 @@
+@import './styles/theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f7f7f8;
+    color: #131316;
+    font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+}
+
+/* Operational Data Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f7f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #d9d9de;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #747686;
+}

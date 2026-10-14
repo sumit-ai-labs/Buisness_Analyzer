@@ -1,0 +1,197 @@
+{
+  "C1": {
+    "status": "FAILED",
+    "headline": "Red Sea shipping attacks halt container cargo vessels",
+    "event_type": "other",
+    "is_relevant": false,
+    "confidence": 0.4
+  },
+  "C2": {
+    "status": "FAILED",
+    "headline": "Dockworkers reach tentative contract agreement, averting port strike",
+    "is_relevant": true,
+    "summary": "Longshoremen and port operators reached a tentative wage agreement late Thursday night, officially calling off the planned coast-wide dock strike. Terminals will operate normally with zero work stoppages or cargo delays."
+  },
+  "C3": {
+    "status": "PASSED",
+    "headline": "Local soccer club wins regional tournament in dramatic shootout",
+    "is_relevant": false
+  },
+  "C7": {
+    "status": "PASSED",
+    "headline": "Huelga indefinida en el puerto de Valencia paraliza la carga de contenedores",
+    "summary": "Los estibadores del puerto de Valencia han iniciado este lunes una huelga indefinida exigiendo mejoras laborales. M\u00e1s de cuarenta buques mercantes permanecen fondeados esperando atracar.",
+    "location": "Puerto de Valencia",
+    "is_relevant": false,
+    "note": "LLM successfully parses non-English article and translates/structures into English fields."
+  },
+  "E1": {
+    "status": "PASSED",
+    "geo_status": "LOCATION_VERIFIED",
+    "distance_km": 1.87,
+    "match_confidence": 86.0
+  },
+  "L1": {
+    "status": "PASSED",
+    "entities_count": 5,
+    "relationships_count": 4,
+    "raw_results_count": 15,
+    "relevant_events_count": 9,
+    "gated_count": 0,
+    "alerts_count": 8,
+    "alerts": [
+      {
+        "id": "221342ef-d718-45d7-8b4a-68bfe8f29c80",
+        "message": "Disruption detected (STRIKE): 'Empty-container operator strike chokes Mundra\u2019s EXIM movement'. Impacted network entities: [Mundra Port Terminal, Mumbai Logistics Hub, Delhi Central Distribution, Gujarat Chemical Works, Bangalore Assembly Plant]. Severity Risk Level: CRITICAL (Score: 92.31/100). Verification: MODERATE credibility (61.24/100, source: unverified, corroboration: 2 source(s)). Geo Match: LOCATION_VERIFIED (Entity Confidence: 86.0/100, Distance: 9.7 km, Location: Mundra Taluka).",
+        "severity_score": 92.31,
+        "risk_level": "critical",
+        "credibility_score": 61.24,
+        "factors": {
+          "dependency_weight_pct": 100.0,
+          "criticality_score": 100.0,
+          "lead_time_days_score": 75.0,
+          "single_source_vulnerability": 100.0,
+          "extraction_confidence": 73.1,
+          "weighted_dependency_contrib": 30.0,
+          "weighted_criticality_contrib": 25.0,
+          "weighted_lead_time_contrib": 15.0,
+          "weighted_single_source_contrib": 15.0,
+          "weighted_confidence_contrib": 7.31
+        }
+      },
+      {
+        "id": "dfbd57cf-eefe-4010-be4f-488212a3b9d4",
+        "message": "Disruption detected (STRIKE): 'Mundra Container Yard strike disrupts EXIM supply chain as around 5,000 containers a day face delays'. Impacted network entities: [Mundra Port Terminal, Mumbai Logistics Hub, Delhi Central Distribution, Gujarat Chemical Works, Bangalore Assembly Plant]. Severity Risk Level: CRITICAL (Score: 92.32/100). Verification: MODERATE credibility (61.31/100, source: unverified, corroboration: 2 source(s)). Geo Match: LOCATION_VERIFIED (Entity Confidence: 86.0/100, Distance: 9.7 km, Location: Mundra Taluka).",
+        "severity_score": 92.32,
+        "risk_level": "critical",
+        "credibility_score": 61.31,
+        "factors": {
+          "dependency_weight_pct": 100.0,
+          "criticality_score": 100.0,
+          "lead_time_days_score": 75.0,
+          "single_source_vulnerability": 100.0,
+          "extraction_confidence": 73.2,
+          "weighted_dependency_contrib": 30.0,
+          "weighted_criticality_contrib": 25.0,
+          "weighted_lead_time_contrib": 15.0,
+          "weighted_single_source_contrib": 15.0,
+          "weighted_confidence_contrib": 7.32
+        }
+      },
+      {
+        "id": "2df8a209-39d4-4dd6-9919-63b5244c9a94",
+        "message": "Disruption detected (STRIKE): 'Mundra Port operations resume as empty yard operators call off 13-day strike'. Impacted network entities: [Mundra Port Terminal, Mumbai Logistics Hub, Delhi Central Distribution, Gujarat Chemical Works, Bangalore Assembly Plant]. Severity Risk Level: CRITICAL (Score: 92.3/100). Verification: MODERATE credibility (60.95/100, source: unverified, corroboration: 2 source(s)). Geo Match: LOCATION_VERIFIED (Entity Confidence: 86.0/100, Distance: 9.7 km, Location: Mundra Taluka).",
+        "severity_score": 92.3,
+        "risk_level": "critical",
+        "credibility_score": 60.95,
+        "factors": {
+          "dependency_weight_pct": 100.0,
+          "criticality_score": 100.0,
+          "lead_time_days_score": 75.0,
+          "single_source_vulnerability": 100.0,
+          "extraction_confidence": 73.0,
+          "weighted_dependency_contrib": 30.0,
+          "weighted_criticality_contrib": 25.0,
+          "weighted_lead_time_contrib": 15.0,
+          "weighted_single_source_contrib": 15.0,
+          "weighted_confidence_contrib": 7.3
+        }
+      },
+      {
+        "id": "e6b437ce-39ef-447b-ae3d-cf69c16c9220",
+        "message": "Disruption detected (STRIKE): 'Lufthansa Cargo Suspends Mumbai Freighter Services Amid Airport Congestion'. Impacted network entities: [Mumbai Logistics Hub, Delhi Central Distribution, Gujarat Chemical Works, Mundra Port Terminal, Bangalore Assembly Plant]. Severity Risk Level: CRITICAL (Score: 82.48/100). Verification: LOW credibility (44.54/100, source: unverified, corroboration: 0 source(s)). Geo Match: LOCATION_VERIFIED (Entity Confidence: 100.0/100, Distance: 1.1 km, Location: Mumbai).",
+        "severity_score": 82.48,
+        "risk_level": "critical",
+        "credibility_score": 44.54,
+        "factors": {
+          "dependency_weight_pct": 70.0,
+          "criticality_score": 100.0,
+          "lead_time_days_score": 75.0,
+          "single_source_vulnerability": 100.0,
+          "extraction_confidence": 64.8,
+          "weighted_dependency_contrib": 21.0,
+          "weighted_criticality_contrib": 25.0,
+          "weighted_lead_time_contrib": 15.0,
+          "weighted_single_source_contrib": 15.0,
+          "weighted_confidence_contrib": 6.48
+        }
+      },
+      {
+        "id": "35ca01c6-8ec4-446c-9fd5-d09745720cb2",
+        "message": "Disruption detected (FLOOD): 'Central railway powers up: Freight revenue crosses rs. 3,400 crore milestone on surge in coal and au'. Impacted network entities: [Mumbai Logistics Hub, Delhi Central Distribution, Gujarat Chemical Works, Mundra Port Terminal, Bangalore Assembly Plant]. Severity Risk Level: CRITICAL (Score: 82.51/100). Verification: LOW credibility (45.28/100, source: unverified, corroboration: 0 source(s)). Geo Match: LOCATION_VERIFIED (Entity Confidence: 100.0/100, Distance: 1.1 km, Location: Mumbai).",
+        "severity_score": 82.51,
+        "risk_level": "critical",
+        "credibility_score": 45.28,
+        "factors": {
+          "dependency_weight_pct": 70.0,
+          "criticality_score": 100.0,
+          "lead_time_days_score": 75.0,
+          "single_source_vulnerability": 100.0,
+          "extraction_confidence": 65.1,
+          "weighted_dependency_contrib": 21.0,
+          "weighted_criticality_contrib": 25.0,
+          "weighted_lead_time_contrib": 15.0,
+          "weighted_single_source_contrib": 15.0,
+          "weighted_confidence_contrib": 6.51
+        }
+      },
+      {
+        "id": "0ac1c443-a690-4b9f-94e9-9660e2395b1d",
+        "message": "Disruption detected (STRIKE): 'As DTC strike continues, Delhi Metro chips in with 8 extra trains'. Impacted network entities: [Delhi Central Distribution, Mumbai Logistics Hub, Gujarat Chemical Works, Mundra Port Terminal, Bangalore Assembly Plant]. Severity Risk Level: CRITICAL (Score: 82.5/100). Verification: LOW credibility (45.03/100, source: unverified, corroboration: 0 source(s)). Geo Match: LOCATION_VERIFIED (Entity Confidence: 86.0/100, Distance: 10.5 km, Location: Delhi).",
+        "severity_score": 82.5,
+        "risk_level": "critical",
+        "credibility_score": 45.03,
+        "factors": {
+          "dependency_weight_pct": 70.0,
+          "criticality_score": 100.0,
+          "lead_time_days_score": 75.0,
+          "single_source_vulnerability": 100.0,
+          "extraction_confidence": 65.0,
+          "weighted_dependency_contrib": 21.0,
+          "weighted_criticality_contrib": 25.0,
+          "weighted_lead_time_contrib": 15.0,
+          "weighted_single_source_contrib": 15.0,
+          "weighted_confidence_contrib": 6.5
+        }
+      },
+      {
+        "id": "8f885e72-0f79-4d8f-9958-3174b2a9b0ff",
+        "message": "Disruption detected (FLOOD): 'India: LPU suspends classes after unrest over alleged rape'. Impacted network entities: [Delhi Central Distribution, Mumbai Logistics Hub, Gujarat Chemical Works, Mundra Port Terminal, Bangalore Assembly Plant]. Severity Risk Level: CRITICAL (Score: 83.14/100). Verification: LOW credibility (57.85/100, source: established_news, corroboration: 0 source(s)). Geo Match: LOCATION_VERIFIED (Entity Confidence: 86.0/100, Distance: 10.5 km, Location: Delhi).",
+        "severity_score": 83.14,
+        "risk_level": "critical",
+        "credibility_score": 57.85,
+        "factors": {
+          "dependency_weight_pct": 70.0,
+          "criticality_score": 100.0,
+          "lead_time_days_score": 75.0,
+          "single_source_vulnerability": 100.0,
+          "extraction_confidence": 71.4,
+          "weighted_dependency_contrib": 21.0,
+          "weighted_criticality_contrib": 25.0,
+          "weighted_lead_time_contrib": 15.0,
+          "weighted_single_source_contrib": 15.0,
+          "weighted_confidence_contrib": 7.14
+        }
+      },
+      {
+        "id": "58d0547a-c998-4f08-95b6-bb54bb565e0c",
+        "message": "Disruption detected (STRIKE): 'Locals symbolically \u2018open\u2019 Bengaluru Metro Pink Line, demand early launch - The Hindu'. Impacted network entities: [Bangalore Assembly Plant, Mumbai Logistics Hub, Delhi Central Distribution, Gujarat Chemical Works, Mundra Port Terminal]. Severity Risk Level: CRITICAL (Score: 82.99/100). Verification: LOW credibility (54.81/100, source: established_news, corroboration: 0 source(s)). Geo Match: LOCATION_PARTIALLY_VERIFIED (Entity Confidence: 50.0/100, Distance: N/A, Location: Epicenter).",
+        "severity_score": 82.99,
+        "risk_level": "critical",
+        "credibility_score": 54.81,
+        "factors": {
+          "dependency_weight_pct": 70.0,
+          "criticality_score": 100.0,
+          "lead_time_days_score": 75.0,
+          "single_source_vulnerability": 100.0,
+          "extraction_confidence": 69.9,
+          "weighted_dependency_contrib": 21.0,
+          "weighted_criticality_contrib": 25.0,
+          "weighted_lead_time_contrib": 15.0,
+          "weighted_single_source_contrib": 15.0,
+          "weighted_confidence_contrib": 6.99
+        }
+      }
+    ]
+  }
+}

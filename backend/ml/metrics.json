@@ -1,0 +1,37 @@
+{
+  "model_version": "credibility-clf-v1-2026-09",
+  "dataset": "DEMO_FALLBACK",
+  "is_fallback_dataset": true,
+  "fallback_warning": "DEMO FALLBACK DATASET \u2014 metrics are NOT representative of real-world performance.",
+  "train_samples": 48,
+  "test_samples": 12,
+  "random_state": 42,
+  "test_size": 0.2,
+  "max_features": 8000,
+  "accuracy": 0.8333,
+  "precision": 0.8333,
+  "recall": 0.8333,
+  "f1": 0.8333,
+  "confusion_matrix": [
+    [
+      5,
+      1
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "model_classes": [
+    0,
+    1
+  ],
+  "real_class_index": 1,
+  "trained_at": "2026-09-29T14:58:09.933309+00:00",
+  "limitations": [
+    "Model trained on general news-style dataset, not supply-chain-specific text.",
+    "Text style is one signal among four in the credibility formula.",
+    "This model does not establish whether a news event actually occurred.",
+    "Deepfake/multimedia detection is out of scope."
+  ]
+}
